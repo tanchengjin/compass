@@ -1,3 +1,5 @@
+在框架根目录下创建buffer缓存文件夹  并赋予777权限
+Linux下需要确保 view下文件夹与控制器名称一致  
 |---compass  核心文件夹
 
 |---application  应用文件夹
@@ -25,6 +27,8 @@ $model->save();
 
 查询  
 $model->select();  
+支持链式操作  
+$model->where('id=1')->field('id,title')->order('id desc')->limit(9)->select();  
 新增  
 $model->insert(['field'=>'data']);  
 删除  
