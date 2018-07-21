@@ -25,6 +25,8 @@ $model->save();
 
 查询  
 $model->select();  
+支持链式操作  
+$model->where('id=1')->field('id,title')->order('id desc')->limit(9)->select();  
 新增  
 $model->insert(['field'=>'data']);  
 删除  
