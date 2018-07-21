@@ -1,3 +1,4 @@
+在框架根目录下创建buffer缓存文件夹  并赋予777权限
 |---compass  核心文件夹
 
 |---application  应用文件夹
